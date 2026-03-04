@@ -1,0 +1,242 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:pal="http://v8.1c.ru/8.1/data/ui/colors/palette" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.21">
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<ChildItems>
+		<InputField name="ПутьКФайлу" id="1">
+			<DataPath>Объект.ПутьКФайлу</DataPath>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="ПутьКФайлуКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="ПутьКФайлуРасширеннаяПодсказка" id="3"/>
+		</InputField>
+		<InputField name="Организация" id="5">
+			<DataPath>Объект.Организация</DataPath>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="ОрганизацияКонтекстноеМеню" id="6"/>
+			<ExtendedTooltip name="ОрганизацияРасширеннаяПодсказка" id="7"/>
+		</InputField>
+		<Button name="Кнопка1" id="101">
+			<Type>UsualButton</Type>
+			<CommandName>Form.Command.ПрочитатьExcel</CommandName>
+			<ExtendedTooltip name="Кнопка1РасширеннаяПодсказка" id="102"/>
+		</Button>
+		<Table name="ДанныеФайла" id="56">
+			<Representation>List</Representation>
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<DataPath>Объект.ДанныеФайла</DataPath>
+			<ShowCommandBar>auto</ShowCommandBar>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="ДанныеФайлаКонтекстноеМеню" id="57"/>
+			<AutoCommandBar name="ДанныеФайлаКоманднаяПанель" id="58">
+				<Autofill>false</Autofill>
+			</AutoCommandBar>
+			<ExtendedTooltip name="ДанныеФайлаРасширеннаяПодсказка" id="59"/>
+			<SearchStringAddition name="ДанныеФайлаСтрокаПоиска" id="60">
+				<AdditionSource>
+					<Item>ДанныеФайла</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ДанныеФайлаСтрокаПоискаКонтекстноеМеню" id="61"/>
+				<ExtendedTooltip name="ДанныеФайлаСтрокаПоискаРасширеннаяПодсказка" id="62"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="ДанныеФайлаСостояниеПросмотра" id="63">
+				<AdditionSource>
+					<Item>ДанныеФайла</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ДанныеФайлаСостояниеПросмотраКонтекстноеМеню" id="64"/>
+				<ExtendedTooltip name="ДанныеФайлаСостояниеПросмотраРасширеннаяПодсказка" id="65"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="ДанныеФайлаУправлениеПоиском" id="66">
+				<AdditionSource>
+					<Item>ДанныеФайла</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="ДанныеФайлаУправлениеПоискомКонтекстноеМеню" id="67"/>
+				<ExtendedTooltip name="ДанныеФайлаУправлениеПоискомРасширеннаяПодсказка" id="68"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<CheckBoxField name="ДанныеФайлаПометка" id="77">
+					<DataPath>Объект.ДанныеФайла.Пометка</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<AutoEditMode>true</AutoEditMode>
+					<ContextMenu name="ДанныеФайлаПометкаКонтекстноеМеню" id="78"/>
+					<ExtendedTooltip name="ДанныеФайлаПометкаРасширеннаяПодсказка" id="79"/>
+				</CheckBoxField>
+				<InputField name="ДанныеФайлаИНН" id="81">
+					<DataPath>Объект.ДанныеФайла.ИНН</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<AutoEditMode>true</AutoEditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ДанныеФайлаИННКонтекстноеМеню" id="82"/>
+					<ExtendedTooltip name="ДанныеФайлаИННРасширеннаяПодсказка" id="83"/>
+				</InputField>
+				<InputField name="ДанныеФайлаКонтрагент" id="85">
+					<DataPath>Объект.ДанныеФайла.Контрагент</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<AutoEditMode>true</AutoEditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ДанныеФайлаКонтрагентКонтекстноеМеню" id="86"/>
+					<ExtendedTooltip name="ДанныеФайлаКонтрагентРасширеннаяПодсказка" id="87"/>
+				</InputField>
+				<InputField name="ДанныеФайлаСумма" id="89">
+					<DataPath>Объект.ДанныеФайла.Сумма</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<AutoEditMode>true</AutoEditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ДанныеФайлаСуммаКонтекстноеМеню" id="90"/>
+					<ExtendedTooltip name="ДанныеФайлаСуммаРасширеннаяПодсказка" id="91"/>
+				</InputField>
+				<InputField name="ДанныеФайлаНазначение" id="93">
+					<DataPath>Объект.ДанныеФайла.Назначение</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<AutoEditMode>true</AutoEditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ДанныеФайлаНазначениеКонтекстноеМеню" id="94"/>
+					<ExtendedTooltip name="ДанныеФайлаНазначениеРасширеннаяПодсказка" id="95"/>
+				</InputField>
+				<InputField name="ДанныеФайлаСтатус" id="97">
+					<DataPath>Объект.ДанныеФайла.Статус</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<AutoEditMode>true</AutoEditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ДанныеФайлаСтатусКонтекстноеМеню" id="98"/>
+					<ExtendedTooltip name="ДанныеФайлаСтатусРасширеннаяПодсказка" id="99"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+		<Button name="Кнопка2" id="103">
+			<Type>UsualButton</Type>
+			<CommandName>Form.Command.СоздатьДокумент</CommandName>
+			<ExtendedTooltip name="Кнопка2РасширеннаяПодсказка" id="104"/>
+		</Button>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:ExternalDataProcessorObject.ВнешняяОбработка1</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<Columns>
+				<AdditionalColumns table="Объект.ДанныеФайла">
+					<Column name="Пометка" id="2">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Пометка</v8:content>
+							</v8:item>
+						</Title>
+						<Type>
+							<v8:Type>xs:boolean</v8:Type>
+						</Type>
+					</Column>
+					<Column name="ИНН" id="1">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>ИНН</v8:content>
+							</v8:item>
+						</Title>
+						<Type>
+							<v8:Type>xs:string</v8:Type>
+							<v8:StringQualifiers>
+								<v8:Length>12</v8:Length>
+								<v8:AllowedLength>Variable</v8:AllowedLength>
+							</v8:StringQualifiers>
+						</Type>
+					</Column>
+					<Column name="Контрагент" id="3">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Контрагент</v8:content>
+							</v8:item>
+						</Title>
+						<Type>
+							<v8:Type>cfg:CatalogRef.Контрагенты</v8:Type>
+						</Type>
+					</Column>
+					<Column name="Сумма" id="4">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Сумма</v8:content>
+							</v8:item>
+						</Title>
+						<Type>
+							<v8:Type>xs:decimal</v8:Type>
+							<v8:NumberQualifiers>
+								<v8:Digits>10</v8:Digits>
+								<v8:FractionDigits>2</v8:FractionDigits>
+								<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+							</v8:NumberQualifiers>
+						</Type>
+					</Column>
+					<Column name="Назначение" id="5">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Назначение</v8:content>
+							</v8:item>
+						</Title>
+						<Type>
+							<v8:Type>xs:string</v8:Type>
+							<v8:StringQualifiers>
+								<v8:Length>10</v8:Length>
+								<v8:AllowedLength>Variable</v8:AllowedLength>
+							</v8:StringQualifiers>
+						</Type>
+					</Column>
+					<Column name="Статус" id="6">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Статус</v8:content>
+							</v8:item>
+						</Title>
+						<Type>
+							<v8:Type>xs:string</v8:Type>
+							<v8:StringQualifiers>
+								<v8:Length>12</v8:Length>
+								<v8:AllowedLength>Variable</v8:AllowedLength>
+							</v8:StringQualifiers>
+						</Type>
+					</Column>
+				</AdditionalColumns>
+			</Columns>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ПрочитатьExcel" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Прочитать excel</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Прочитать excel</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПрочитатьExcel</Action>
+		</Command>
+		<Command name="СоздатьДокумент" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Создать документ</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Создать документ</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СоздатьДокументы</Action>
+		</Command>
+	</Commands>
+</Form>
